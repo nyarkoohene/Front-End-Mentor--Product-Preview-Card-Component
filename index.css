@@ -1,0 +1,129 @@
+body{
+    background: rgba(243,234,227,255);
+    height: 100%;
+    margin: 0;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fraunces-unique {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 800; 
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+    
+  }
+  
+
+.card{
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    height: 440px;
+    width: 600px;
+    
+    margin: 175px auto auto auto;
+   
+}
+
+.card img{
+    height: 100%;
+    width: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-info{
+    
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    text-align: left;
+}
+
+.card-info p{
+    margin-bottom: 20px;
+    color:rgba(164,164,173,255);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+       
+}
+.card-info h4{
+    color: rgba(164,164,173,255);
+    font-weight: lighter;
+    font-family: Arial, sans-serif;
+    font-size: x-small;
+}
+
+button{
+    width: 100%;
+    background-color: rgba(61,129,104,255);
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 650;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgba(51, 109, 94, 1)
+    
+}
+
+#c-price{
+    color: rgba(61,129,104,255);
+    display: inline;
+    
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: auto;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 600px){
+    .card {
+        border-radius: 10px;
+        background: white;
+        display: flex;
+        flex-direction: column; 
+        height: 70%; 
+        width: 80%; 
+        margin: 20px auto;
+    }
+    
+    .card img {
+        height: 300px; 
+        width: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0px;
+    }
+    
+    .card-info {
+        padding: 25px;
+        text-align: left; 
+    }
+
+    .fraunces-unique{
+        white-space: pre-line;
+    }
+}
