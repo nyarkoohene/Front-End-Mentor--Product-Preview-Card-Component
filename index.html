@@ -9,38 +9,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Frontend Mentor | Product preview card component</title>
-
-  
-  
+  <title>Frontend Mentor | Product Preview Card Component</title>
 </head>
+
 <body>
   <main role="main">
     <div class="card">
-      
-      <img src="/images/image-product-desktop.jpg" alt="perfume image">
-      
+      <div class="product-image-container">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/images/image-product-mobile.jpg">
+          <img src="/images/image-product-desktop.jpg" alt="perfume image">
+        </picture>
+      </div>
+     
       <div class="card-info">
-        <h4>P&nbsp;E&nbsp;R&nbsp;F&nbsp;U&nbsp;M&nbsp;E</h4>
+        <p class="ribbon-text">PERFUME</p>
         <h1 class="fraunces-unique">Gabrielle Essence 
           Eau De Parfum</h1>
-        <p>
+        <p class="product-desc">
           A floral, solar and voluptuous
           interpretation composed by 
           Olivier Polge,Perfumer-Creator
           for the House of CHANEL.
         </p>
-        <h1 id="c-price"> $149.99</h1>&emsp; <s>$169.99</s>
-        <button><i class="fa fa-shopping-cart"></i>&emsp;Add to Cart</button>
+        <p id="c-price"> $149.99</p>&emsp; <s>$169.99</s>
+        <button><i class="fa fa-shopping-cart"></i>Add to Cart</button>
         
       </div>
     </div>
-    
-
+  </main>
+  <footer class="footer">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.linkedin.com/in/ohenenyarko/" target="_blank">Ohene Nyarko</a>.
     </div>
-  </main>
+  </footer>
 </body>
 </html>
